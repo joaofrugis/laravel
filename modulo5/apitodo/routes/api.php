@@ -10,10 +10,6 @@ use App\Http\Controllers\AuthController;
 //     return $request->user();
 // });
 
-Route::get('/ping', function(){
-    return ['pong' => true];
-}); 
-
 Route::get('/unauthenticated', function () {
     return ['error' => 'Usuário não logado'];
 })->name('login');
